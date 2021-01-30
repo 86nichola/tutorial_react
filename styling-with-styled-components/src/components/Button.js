@@ -76,7 +76,7 @@ const StyledButton = styled.button`
   padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  margin-right: 1rem;
+  margin-top: 1rem;
 
   /* 크기 */
   ${sizeStyle}
