@@ -12,7 +12,7 @@ const AppBlock = styled.div`
 `;
 
 const ButtonGroup = styled.div`
-  & + & {
+  &:not(:first-child) {
     margin-top: 1rem;
   }
 `;
