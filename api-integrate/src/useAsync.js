@@ -12,6 +12,7 @@ function reducer(state, action) {
 
     //SUCCESS
     case "SUCCESS":
+      debugger;
       return {
         loading: false,
         data: action.data,
@@ -30,7 +31,7 @@ function reducer(state, action) {
   }
 }
 
-function useAsync(callback, deps = [], skip = false) {
+function useAsync(callback, deps = {} || [], skip = false) {
   const [state, dispatch] = useReducer(reducer, {
     loading: false,
     data: null,
