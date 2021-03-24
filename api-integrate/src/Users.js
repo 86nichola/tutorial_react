@@ -4,7 +4,7 @@ import useAsync from "./useAsync";
 
 async function getQuote() {
   const response = await axios.get(
-    "https://query1.finance.yahoo.com/v7/finance/quote?&symbols=BTC-USD,ETH-USD,BNB-USD,USDT-USD,ADA-USD,DOT1-USD,DOT2-USD,XRP-USD,LTC-USD,LINK-USD,THETA-USD,BCH-USD,USDC-USD,XLM-USD,LUNA1-USD,DOGE-USD,VET-USD,TRX-USD,ATOM1-USD,SOL1-USD,MIOTA-USD,AVAX-USD,XMR-USD,BSV-USD,EOS-USD&fields=regularMarketPrice,regularMarketChange,regularMarketChangePercent,regularMarketVolume"
+    "/v7/finance/quote?&symbols=BTC-USD,ETH-USD,BNB-USD,USDT-USD,ADA-USD,DOT1-USD,DOT2-USD,XRP-USD,LTC-USD,LINK-USD,THETA-USD,BCH-USD,USDC-USD,XLM-USD,LUNA1-USD,DOGE-USD,VET-USD,TRX-USD,ATOM1-USD,SOL1-USD,MIOTA-USD,AVAX-USD,XMR-USD,BSV-USD,EOS-USD&fields=regularMarketPrice,regularMarketChange,regularMarketChangePercent,regularMarketVolume"
   );
   debugger;
   return response.data.quoteResponse.result;
